@@ -3,14 +3,22 @@ import "../App.css";
 
 
 
-const handleClick = () => {
-  document.querySelector('.group-content').style.display = 'none' 
+const handleClick1 = () => {
+  document.querySelector("#group1").style.display = "block";
+};
+const handleClick2 = () => {
+  document.querySelector("#group2").style.display = "block";
+};
+const handleClick3 = () => {
+  document.querySelector("#group3").style.display = "block";
+};
+const handleClick4 = () => {
+  document.querySelector("#group4").style.display = "block";
 };
 
 
+
 const Product = () => (
-
-
   <div className="Product_container">
     <div className="Product_main">
       <div className="Product_image">
@@ -138,13 +146,16 @@ const Product = () => (
 
     <div className="descriptions">
       <div className="drop-box">
-        <div className="group-head" data-id="description" 
-
->
+        <div className="group-head" data-id="description">
           <h1>Overview</h1>
-          <img src={require("../IMAGES/arrow.png")} alt="" srcset="" />
+          <img
+            src={require("../IMAGES/arrow.png")}
+            alt=""
+            srcset=""
+            onClick={handleClick1}
+          />
         </div>
-        <div className="group-content" id="group-content">
+        <div className="group" id="group1">
           <div class="table" id="description">
             <div class="levels">
               <div class="row-title">Description</div>
@@ -221,12 +232,15 @@ const Product = () => (
           </div>
         </div>
         <div class="drop-box">
-          <div className="group-head" data-id="specifications" onClick={handleClick}  
+          <div
+            className="group-head"
+            data-id="specifications"
+            onClick={handleClick2}
           >
             <h1>Specifications</h1>
             <img src={require("../IMAGES/arrow.png")} alt="" srcset />
           </div>
-          <div className="group-content" id="group-content">
+          <div className="group" id="group2">
             <div class="table" id="specifications">
               <div class="levels">
                 <div class="row-title">General</div>
@@ -358,11 +372,11 @@ const Product = () => (
           </div>
         </div>
         <div class="drop-box">
-          <div class="group-head" data-id="reviews" onClick={handleClick}>
+          <div class="group-head" data-id="reviews" onClick={handleClick3}>
             <h1>Reviews</h1>
             <img src={require("../IMAGES/arrow.png")} alt="" srcset="" />
           </div>
-          <div className="group-content" id="group-content">
+          <div className="group" id="group3">
             <div class="table" id="reviews">
               <div class="levels">
                 <div class="row-title">Reviews</div>
@@ -379,11 +393,11 @@ const Product = () => (
           </div>
         </div>
         <div class="drop-box">
-          <div className="group-head" data-id="qa" onClick={handleClick}>
+          <div className="group-head" data-id="qa" onClick={handleClick4}>
             <h1>Q/A</h1>
             <img src={require("../IMAGES/arrow.png")} alt="" srcset="" />
           </div>
-          <div className="group-content" id="group-content">
+          <div className="group" id="group4">
             <div class="table" id="qa">
               <div class="levels">
                 <h1>Feature Coming Soon</h1>
