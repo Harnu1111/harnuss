@@ -14,19 +14,19 @@ const Shop = () => {
       <section>
         <Banner />
       </section>
-      <section>
+      <section className="Shopify">
         <SmartPhoneShop />
       </section>
-      <section>
+      <section className="Shopify">
         <Laptop />
       </section>
-      <section>
+      <section className="Shopify">
         <Speaker />
       </section>
-      <section>
+      <section className="Shopify">
         <Games />
       </section>
-      <section>
+      <section className="Shopify">
         <Televison />
       </section>
     </div>
