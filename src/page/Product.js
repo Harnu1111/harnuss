@@ -4,7 +4,7 @@ import "../App.css";
 
 
 const handleClick = () => {
-  document.querySelector('.group-content').style.display = 'block' 
+  document.querySelector('.group-content').style.display = 'none' 
 };
 
 
