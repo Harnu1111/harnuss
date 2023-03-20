@@ -5,15 +5,27 @@ import "../App.css";
 
 const handleClick1 = () => {
   document.querySelector("#group1").style.display = "block";
+document.querySelector("#group-head1").addEventListener("click", () => {
+  document.querySelector("#group1").style.display = "none";
+});
 };
 const handleClick2 = () => {
   document.querySelector("#group2").style.display = "block";
+  document.querySelector("#group-head2").addEventListener("click", () => {
+    document.querySelector("#group2").style.display = "none";
+  });
 };
 const handleClick3 = () => {
   document.querySelector("#group3").style.display = "block";
+  document.querySelector("#group-head3").addEventListener("click", () => {
+    document.querySelector("#group3").style.display = "none";
+  });
 };
 const handleClick4 = () => {
   document.querySelector("#group4").style.display = "block";
+  document.querySelector("#group-head4").addEventListener("click", () => {
+    document.querySelector("#group4").style.display = "none";
+  });
 };
 
 
@@ -146,7 +158,7 @@ const Product = () => (
 
     <div className="descriptions">
       <div className="drop-box">
-        <div className="group-head" data-id="description">
+        <div className="group-head" data-id="description" id="group-head1">
           <h1>Overview</h1>
           <img
             src={require("../IMAGES/arrow.png")}
@@ -235,6 +247,7 @@ const Product = () => (
           <div
             className="group-head"
             data-id="specifications"
+            id="group-head2"
             onClick={handleClick2}
           >
             <h1>Specifications</h1>
@@ -372,7 +385,12 @@ const Product = () => (
           </div>
         </div>
         <div class="drop-box">
-          <div class="group-head" data-id="reviews" onClick={handleClick3}>
+          <div
+            class="group-head"
+            data-id="reviews"
+            id="group-head3"
+            onClick={handleClick3}
+          >
             <h1>Reviews</h1>
             <img src={require("../IMAGES/arrow.png")} alt="" srcset="" />
           </div>
@@ -393,7 +411,12 @@ const Product = () => (
           </div>
         </div>
         <div class="drop-box">
-          <div className="group-head" data-id="qa" onClick={handleClick4}>
+          <div
+            className="group-head"
+            data-id="qa"
+            id="group-head4"
+            onClick={handleClick4}
+          >
             <h1>Q/A</h1>
             <img src={require("../IMAGES/arrow.png")} alt="" srcset="" />
           </div>

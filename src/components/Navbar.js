@@ -39,14 +39,14 @@ const Navbar = () => {
             </button>
           </div>
 
-          <span className="Navbar-cart">
-            <button id="cart_btn">
+          <a href="/cart" className="Navbar-cart">
+            <button id="cart_btn" path="/cart">
               <i id="cart">
                 <AiOutlineShoppingCart />
               </i>
               <p>5</p>
             </button>
-          </span>
+          </a>
           <span className="login" id="login">
             <button>
               <p>Login</p>
