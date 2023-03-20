@@ -36,12 +36,46 @@ const Cart = () => {
                   </span>
                 </div>
               </div>
+              <div className="Cart_price">
+                <div className="Cart_total_price">$565</div>
+                <div className="Cart_amount">1 x 565</div>
+              </div>
             </div>
-            <div className="Cart_price">
-              <span className="Cart_total_price">$565</span>
-              <span className="Cart_amount">1 x 565</span>
+            <div className="Cart_pay">
+              <div>
+                {" "}
+                <div>
+                  <h4>Delivery : </h4>
+                  <span className="Free">
+                    <h4>Free</h4>
+                  </span>
+                </div>
+                <p>Delivery by Septmber 20th, 2023</p>
+              </div>
+              <div className="Promo">
+                <h3>PROMOCODE</h3>
+                <button>Apply</button>
+              </div>
+              <div className="Discount_card">
+                <div className="Discount">
+                  Discount
+                  <span className="percent">10%</span>
+                </div>
+                <div className="Discount">
+                  Delivery
+                  <span className="percent">$3</span>
+                </div>
+                <div className="Discount">
+                  {" "}
+                  Tax <span className="percent">$3.45</span>
+                </div>
+              </div>
+              <div className="Total_delivery">Total
+                <span className="Total_delivery_amount">$4335.45</span>
+              </div>
+              <button>Continue Shopping</button>
+              <button>Proceed to Check Out</button>
             </div>
-            <div className="Cart_pay">Delivery</div>
           </div>
         </div>
       </div>
