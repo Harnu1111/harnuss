@@ -95,14 +95,19 @@ const Navvy = () => {
                 {" "}
                 <p>Speakers</p>
               </a>
-              <a href='/'>
+              <a href="/">
                 {" "}
                 <p>Video Games </p>
               </a>
 
               <h3>Sections</h3>
-              <p>Shop</p>
-              <p>Products</p>
+              <a href="/shop">
+                {" "}
+                <p>Shop</p>
+              </a>
+              <a href='/product'>
+                <p>Products</p>
+              </a>
               <p>About Us</p>
               <p>Contact Us</p>
 
