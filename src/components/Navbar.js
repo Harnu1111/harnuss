@@ -3,11 +3,15 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
 import "../App.css";
-const Navbar = () => {
+
+
+
+
+const Navbar = ({ openSidebar }) => {
   return (
     <div className="Navbar_container">
       <div className="Navbar_wrapper">
-        <button>
+        <button onClick={openSidebar}>
           <i className="icon">
             <AiOutlineMenu />
           </i>
