@@ -65,44 +65,57 @@ const Navvy = () => {
       </div>
 
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-     
-          <div className="Sidebar_container">
-            <div className="Sidebar_wrapper">
-              <span className="Sidebar_title">
-                <h3>MENU</h3>
+        <div className="Sidebar_container">
+          <div className="Sidebar_wrapper">
+            <span className="Sidebar_title">
+              <h3>MENU</h3>
 
-                <button>
-                  <i>
-                    <CloseIcon />
-                  </i>
-                </button>
-              </span>
+              <button>
+                <i>
+                  <CloseIcon />
+                </i>
+              </button>
+            </span>
 
-              <div className="Sidebar_menu" onClick={showSidebar}>
-                <h3>Shop By Department</h3>
+            <div className="Sidebar_menu" onClick={showSidebar}>
+              <h3>Shop By Department</h3>
+              <a href="/">
+                {" "}
                 <p>Smart Phones</p>
+              </a>
+              <a href="/">
+                {" "}
                 <p>Televisions</p>
+              </a>
+              <a href="/">
+                {" "}
                 <p>Laptops & Computers</p>
+              </a>
+              <a href="/">
+                {" "}
                 <p>Speakers</p>
+              </a>
+              <a href='/'>
+                {" "}
                 <p>Video Games </p>
+              </a>
 
-                <h3>Sections</h3>
-                <p>Shop</p>
-                <p>Products</p>
-                <p>About Us</p>
-                <p>Contact Us</p>
+              <h3>Sections</h3>
+              <p>Shop</p>
+              <p>Products</p>
+              <p>About Us</p>
+              <p>Contact Us</p>
 
-                <h3>Support</h3>
-                <p>Visit Our Support</p>
-                <p>online Support</p>
+              <h3>Support</h3>
+              <p>Visit Our Support</p>
+              <p>online Support</p>
 
-                <span id="Logout">
-                  <p>LogOut</p>
-                </span>
-              </div>
+              <span id="Logout">
+                <p>LogOut</p>
+              </span>
             </div>
           </div>
-      
+        </div>
       </nav>
     </>
   );
