@@ -1,13 +1,12 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./page/Home";
 import Shop from "./page/Shop";
 import Product from "./page/Product";
 import Cart from "./page/Cart";
 import Navvy from "./components/Navvy";
-import { useState } from "react";
+
 
 function App() {
 
