@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../../App.css";
 import Phones from "../../Phones.json";
+import Product from "../../page/Product";
 
 const SmartPhoneShop = () => {
+ 
+
+
+
   return (
     <div className="Shopping">
       <div className="Shop_title">
@@ -13,23 +18,21 @@ const SmartPhoneShop = () => {
       </div>
       <div className="Shop">
         {Phones &&
-          Phones.map((phone) => {
+          Phones.map((phones) => {
             return (
-              <div key={phone.id}>
+              <div key={phones.id} phones={phones}>
                 <div className="Shop_container">
                   <div className="Shop_wrapper">
-                    <a href="/">
-                      <div className="Shop_image">
-                        <img src={phone.itemInfo.itemImg[0]} alt="phone" />
-                      </div>
-                      <div className="Shop_text">
-                        <h3>{phone.itemInfo.name}</h3>
-                        <p>{phone.itemInfo.description1}</p>
-                      </div>
-                      <div className="Shop_price">
-                        <h3>${phone.itemInfo.newItemPrice}</h3>
-                      </div>
-                    </a>
+                    <div className="Shop_image">
+                      <img src={phones.itemInfo.itemImg[0]} alt="phone" />
+                    </div>
+                    <div className="Shop_text">
+                      <h3>{phones.itemInfo.name}</h3>
+                      <p>{phones.itemInfo.description1}</p>
+                    </div>
+                    <div className="Shop_price">
+                      <h3>${phones.itemInfo.newItemPrice}</h3>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -39,5 +42,4 @@ const SmartPhoneShop = () => {
     </div>
   );
 }
-
 export default SmartPhoneShop

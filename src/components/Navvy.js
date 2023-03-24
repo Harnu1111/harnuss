@@ -79,23 +79,23 @@ const Navvy = () => {
 
             <div className="Sidebar_menu" onClick={showSidebar}>
               <h3>Shop By Department</h3>
-              <a href="/">
+              <a href="/smartPhoneShop">
                 {" "}
                 <p>Smart Phones</p>
               </a>
-              <a href="/">
+              <a href="/laptop">
                 {" "}
                 <p>Televisions</p>
               </a>
-              <a href="/">
+              <a href="/speaker">
                 {" "}
                 <p>Laptops & Computers</p>
               </a>
-              <a href="/">
+              <a href="/games">
                 {" "}
                 <p>Speakers</p>
               </a>
-              <a href="/">
+              <a href="/televison">
                 {" "}
                 <p>Video Games </p>
               </a>
@@ -105,7 +105,7 @@ const Navvy = () => {
                 {" "}
                 <p>Shop</p>
               </a>
-              <a href='/product'>
+              <a href="/product">
                 <p>Products</p>
               </a>
               <p>About Us</p>

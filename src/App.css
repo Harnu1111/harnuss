@@ -1008,10 +1008,12 @@ margin-bottom: 10px;
 	-ms-transform: rotate(0deg);
 	-o-transform: rotate(0deg);
 }
-.group{
+.group, .group2, .group3, .group4{
   display: none;
 }
-
+.group.active, .group2.active, .group3.active, .group4.active{
+  display: block;
+}
 .table {
 	display: flex;
 	flex-direction: column;
